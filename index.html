@@ -20,13 +20,27 @@
     </div>
   </div>
   
-  <script src="https://www.dropbox.com/s/mmtn0226rf7nkyp/namachatbox-beta.js?dl=1"></script>
+  <!-- <script src="https://www.dropbox.com/s/mmtn0226rf7nkyp/namachatbox-beta.js?dl=1"></script> -->
+  <script src="./dist/js/namachatbox-beta.js"></script>
   
-  <nama-chatbox key="j7X1hBtrrrMces5etduvDWMn" title="Assistente Poupa Tempo" >
+  <nama-chatbox key="j7X1hBtrrrMces5etduvDWMn"
   </nama-chatbox>
   
   <script type="text/javascript">
-    window.nama.chatInstance.startApp()
+    window.nama.chatInstance.startApp({
+      title:"Assistente Poupa Tempo",
+      thumb:"https://organicthemes.com/demo/profile/files/2012/12/profile_img.png",
+      onboarding:{
+        hello:"Olá. Você pode agendar seu atendimento no Poupatempo para serviços de RG, CNH, Veículos, Antecedentes Criminais, Carteira de trabalho, Cadastro de Empregoe Seguro Desemprego\nComo posso te ajudar?",
+        title:"Esta com dúvida?\nCoisas que você pode me pedir:",
+        tips:[
+          "Quero tirar a segunda via do meu RG",
+          "Quero renovar minha carteira de motorista",
+          "Quero verificar os antecedentes criminais",
+          "Quero tirar minha carteira de trabalho",
+        ]
+      }
+    })
   </script>
 
   
